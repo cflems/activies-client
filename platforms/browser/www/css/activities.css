@@ -1,0 +1,249 @@
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  margin: 0;
+  -webkit-touch-callout: none;
+  text-size-adjust: none;
+  user-select: none;
+  background: #eeeeee;
+}
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  text-align: center;
+  width: 100vw;
+  height: 56px;
+  background-color: #00b488;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0px 0px 4px 4px;
+}
+#header h1 {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 24pt;
+  font-weight: bolder;
+}
+#footernav {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  text-align: center;
+  width: 100vw;
+  height: 64px;
+  background-color: #00b488;
+  color: #eeeeee;
+  border-radius: 4px 4px 0px 0px;
+}
+#footernav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footernav ul li {
+  width: 64px;
+  height: 64px;
+  background-size: 48px 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#footernav ul li:hover {
+  /* whatever */
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+}
+.navhome {
+  background-image: url('../img/navhome.png');
+}
+.acticon {
+  background-image: url('../img/navlogo.png');
+}
+.navprof {
+  background-image: url('../img/navprof.png');
+}
+#footernav a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+#content {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 120px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Open Sans';
+  font-size: 16pt;
+  color: #111111;
+}
+#content a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Activities List */
+.post {
+  margin: 1em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 12pt;
+  padding: 0.5em;
+}
+.post p {
+  margin: 0;
+}
+.post.pic .postpic {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-right: 0.5em;
+}
+.post .title {
+  font-weight: bold;
+}
+.post.nopic .title {
+  float: left;
+  height: 100%;
+  margin-right: 0.5em;
+}
+.post .desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Post Page */
+#postform {
+  padding-top: 0.8em;
+}
+#postform #errorbox {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #aa0000;
+}
+#postform p {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+#postform textarea, #postform input[type=text] {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  color: #000000;
+  padding: 0.5em;
+  font-size: 12pt;
+  font-family: Arial;
+  width: 80%;
+}
+#postform textarea {
+  height: 200px;
+  resize: none;
+}
+#postform #submitbtn {
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+  width: 80%;
+  background-color: #dddddd;
+  border: none;
+/*  border: 1px solid rgba(0, 0, 0, 0.75); */
+  border-radius: 8px;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #333333;
+}
+#postform #submitbtn:active {
+  background-color: #bbbbbb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+#activity {
+  text-align: center;
+}
+#activity p {
+  margin: 0;
+}
+#activity #posttitle {
+  margin: 0.25em 0 0 0;
+  font-weight: bold;
+}
+#activity #postloc {
+  font-size: 12pt;
+}
+#activity #postloc::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 0.2em;
+  background-image: url('../img/location.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#activity #postdesc {
+  margin: 0.2em 0;
+}
+#activity #postpicture img {
+  max-width: 75%;
+  max-height: 50%;
+  margin: 0.5em 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+#activity #postdesc {
+  width: 75%;
+  margin: 0.5em auto;
+  font-size: 12pt;
+}
+#activity #postactions {
+  position: fixed;
+  bottom: 74px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 75%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+#activity #likectr {
+  font-size: 14pt;
+  padding: 0.4em 0;
+}
+#activity #postactions button {
+  margin: 0 0 0 5px;
+}
+#activity #likebtn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../img/heart_empty.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#activity #likebtn.liked {
+  background-image: url('../img/heart_full.png');
+}
+
+/* User Profile */
+#prof {
+  padding: 1em;
+}
+#prof p {
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+}
