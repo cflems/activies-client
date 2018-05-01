@@ -4,8 +4,8 @@ const initializers = [
     $('.postlink[href]').click(postclicked);
     phaser({
       'action': 'list',
+      'authkey': authkey,
       // TODO: gps coordinates or something?
-      // TODO: further data like user token or whatever
     });
   },
   function () {
@@ -14,10 +14,10 @@ const initializers = [
       phaser({
         'action': 'post',
         'title': $('#posttitle').val(),
-        'desc': $('#postdesc').val(),
+        'description': $('#postdesc').val(),
         'location': $('#postloc').val(),
+        'authkey': authkey,
         // TODO: picture
-        // TODO: auth token
         // TODO: GPS coordinates
       });
     });
@@ -25,7 +25,8 @@ const initializers = [
   function () {
     phaser({
       'action': 'myprof',
-      // TODO: definitely a user token
+      'authkey': authkey,
+      // TODO: actually do this
     });
     // wire up all the edit buttons or whatever
   },
@@ -33,7 +34,7 @@ const initializers = [
     phaser({
       'action': 'show',
       'id': args[0],
-      // TODO: user auth token
+      'authkey': authkey,
     });
   },
 ];
@@ -57,7 +58,7 @@ const d_handlers = [
       poststr += `
             <p class="username">${data[i].user}</p>
             <p class="title">${data[i].title}</p>
-            <p class="desc">${data[i].desc}</p>
+            <p class="desc">${data[i].description}</p>
           </div>
         </a>
       `;
@@ -73,8 +74,9 @@ const d_handlers = [
 
   },
   function (data) {
-    if (data.status == 'liked' || data.status == 'unliked') {
+    if (data.status && (data.status == 'liked' || data.status == 'unliked')) {
       $('#likebtn').toggleClass('liked');
+      $('#likectr').text(data.likes);
       return;
     }
     $('#posttitle').text(data.title);
@@ -82,18 +84,19 @@ const d_handlers = [
     if (data.pic) {
       $('#postpicture').html(`<img src="${data.pic}" alt="" />`);
     }
-    $('#postdesc').text(data.desc);
-    if (data.liked) $('#likebtn').addClass('liked');
+    $('#postdesc').text(data.description);
+    $('#likectr').text(data.likes);
+    if (data.i_liked) $('#likebtn').addClass('liked');
     $('#likebtn').click(function (e) {
       phaser({
         action: $(this).hasClass('liked') ? 'unlike' : 'like',
         id: data.id,
-        // TODO: user token???
+        'authkey': authkey,
       });
     });
   },
 ];
-let tabno, sockfd, reconnect;
+let tabno, sockfd, reconnect, authkey;
 
 function loadtab (number, ...args) {
   console.log('loadtabbing ', number, ' with (', args, ')');
@@ -150,6 +153,7 @@ function postclicked (e) {
 
 $(function() {
   if (!localStorage.getItem('authkey')) window.location.href = 'login.html';
+  else authkey = localStorage.getItem('authkey');
   sockfd = connectsock();
   loadtab(0);
   $('#navbar a[href]').click(function(e) {
