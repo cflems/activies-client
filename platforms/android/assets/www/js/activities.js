@@ -89,8 +89,8 @@ const d_handlers = [
     if (data.i_liked) $('#likebtn').addClass('liked');
     $('#likebtn').click(function (e) {
       phaser({
-        action: $(this).hasClass('liked') ? 'unlike' : 'like',
-        id: data.id,
+        'action': ($(this).hasClass('liked') ? 'unlike' : 'like'),
+        'id': data.id,
         'authkey': authkey,
       });
     });

@@ -38,7 +38,7 @@ $(function () {
   });
   $('#regbtn').click(function (e) {
     e.preventDefault();
-    if ($('#inpnewpass1').val() == $('#inpnewpass2').val()) {
+    if ($('#inpnewpass1').val() != $('#inpnewpass2').val()) {
       $('.errbox').text('Passwords don\'t match.');
       return;
     }
