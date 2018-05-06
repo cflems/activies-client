@@ -1,3 +1,4 @@
+const WEBSOCK_URI = 'ws://ifq.cflems.net:2237/activies';
 const tabs = ['home', 'post', 'prof', 'show'];
 const initializers = [
   function () {
@@ -108,7 +109,7 @@ function loadtab (number, ...args) {
 }
 
 function connectsock () {
-  let fd = new WebSocket('ws://localhost:2237/activities');
+  let fd = new WebSocket(WEBSOCK_URI);
   fd.onopen = sockopen;
   fd.onclose = sockerror;
   fd.onerror = sockerror;
