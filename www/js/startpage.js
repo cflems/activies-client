@@ -4,7 +4,7 @@ function activate (authkey) {
 }
 
 function makesock (obj) {
-  let fd = new WebSocket('ws://localhost:2237/activities');
+  let fd = new WebSocket(WEBSOCK_URI);
   fd.onopen = function (e) {
     fd.send(JSON.stringify(obj));
   };
