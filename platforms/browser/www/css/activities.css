@@ -247,3 +247,7 @@ body {
   margin: auto;
   text-align: center;
 }
+#prof a {
+  color: #1589ff;
+  text-decoration: none;
+}

@@ -139,7 +139,11 @@ function sockmessage (e) {
 }
 
 function phaser (data) {
-  if (!reconnect) sockfd.send(JSON.stringify(data));
+  if (sockfd.readyState < 1) {
+    setTimeout(function () {
+      phaser(data);
+    }, 1000);
+  } else if (sockfd.readyState < 2) sockfd.send(JSON.stringify(data));
 }
 
 function postclicked (e) {

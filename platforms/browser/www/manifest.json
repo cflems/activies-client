@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "helloworld",
-  "short_name": "helloworld",
-  "version": "com.phonegap.helloworld",
-  "description": "Hello World sample application that responds to the deviceready event.",
-  "author": "PhoneGap Team",
+  "name": "Activies",
+  "short_name": "Activies",
+  "version": "com.peolplesactivities.activies",
+  "description": "Share locations and find the most popular hang-out spots with your friends!",
+  "author": "Carson Fleming",
   "icons": [],
   "orientation": "portrait",
   "start_url": "index.html"
