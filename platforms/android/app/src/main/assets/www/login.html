@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <title>People&apos;s Activities</title>
+    <link rel="stylesheet" type="text/css" href="css/activities.css" />
+    <link rel="stylesheet" type="text/css" href="css/startpage.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/startpage.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Activities</h1>
+    </div>
+    <div id="startpage">
+      <ul id="nav">
+        <li><button id="chooselogin">Log In</button></li>
+        <li><button id="choosereg">Sign Up</button></li>
+      </ul>
+      <form id="loginform" action="#" method="post">
+        <p><input id="inpuser" type="text" placeholder="Username" />
+        <p><input id="inppass" type="password" placeholder="Password" />
+        <p class="errbox"></p>
+        <p><input type="submit" id="loginbtn" value="Log In" /></p>
+      </form>
+      <from id="regform" action="#" method="post">
+        <p><input id="inpnewuser" type="text" placeholder="Username" /></p>
+        <p><input id="inpnewemail" type="text" placeholder="Email" /></p>
+        <p><input id="inpnewpass1" type="password" placeholder="Password" /></p>
+        <p><input id="inpnewpass2" type="password" placeholder="Confirm password" /></p>
+        <p class="errbox"></p>
+        <p><input type="submit" id="regbtn" value="Sign Up" /></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.peolplesactivities.activies" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Activies</name>
+<widget id="com.peolplesactivities.activitiez" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Activiez</name>
     <description>
-        Share locations and find the most popular hang-out spots with your friends!
+        Check out what's going down around you. Activitiez makes it easy to find parties, traditions, local hang out spots, and chill people all around you. Share your story to connect with people around you or just browse the stream and find some cool stuff to do.
     </description>
     <author email="cflems@cflems.net" href="http://phonegap.com">
         Carson Fleming

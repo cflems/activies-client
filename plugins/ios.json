@@ -1,0 +1,55 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": "Used to capture pictures attached to posts",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Used to select pictures attached to posts",
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-geolocation": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "Used to select posts near your location",
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-media-capture": {
+      "CAMERA_USAGE_DESCRIPTION": "Used to capture pictures attached to posts",
+      "MICROPHONE_USAGE_DESCRIPTION": "Unused",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Used to select pictures attached to posts",
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
+    }
+  }
+}
