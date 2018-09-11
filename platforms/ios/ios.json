@@ -63,29 +63,29 @@
         "parents": {
           "NSCameraUsageDescription": [
             {
-              "xml": "<string> </string>",
+              "xml": "<string>Used to capture pictures attached to posts</string>",
               "count": 2
             }
           ],
           "NSPhotoLibraryUsageDescription": [
             {
-              "xml": "<string> </string>",
+              "xml": "<string>Used to select pictures attached to posts</string>",
               "count": 2
             }
           ],
           "NSLocationWhenInUseUsageDescription": [
             {
-              "xml": "<string />",
+              "xml": "<string>Used to filter posts near your location</string>",
               "count": 1
             },
             {
-              "xml": "<string> </string>",
+              "xml": "<string>Used to filter posts near your location</string>",
               "count": 1
             }
           ],
           "NSMicrophoneUsageDescription": [
             {
-              "xml": "<string> </string>",
+              "xml": "<string>Unused</string>",
               "count": 1
             }
           ]

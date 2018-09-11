@@ -54,12 +54,12 @@
       <string>UIInterfaceOrientationPortrait</string>
     </array>
     <key>NSCameraUsageDescription</key>
-    <string/>
+    <string>Used to capture pictures attached to posts</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string/>
+    <string>Used to select pictures attached to posts</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
+    <string>Used to filter posts near your location</string>
     <key>NSMicrophoneUsageDescription</key>
-    <string/>
+    <string>Unused</string>
   </dict>
 </plist>

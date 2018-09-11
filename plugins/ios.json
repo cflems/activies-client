@@ -22,7 +22,7 @@
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-geolocation": {
-      "GEOLOCATION_USAGE_DESCRIPTION": "Used to select posts near your location",
+      "GEOLOCATION_USAGE_DESCRIPTION": "Used to filter posts near your location",
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-globalization": {
