@@ -4,8 +4,8 @@
   "displayName": "activitiez",
   "cordova": {
     "platforms": [
-      "browser",
       "android",
+      "browser",
       "ios"
     ],
     "plugins": {

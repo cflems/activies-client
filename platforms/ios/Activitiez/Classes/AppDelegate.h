@@ -16,11 +16,18 @@
  specific language governing permissions and limitations
  under the License.
  */
+
 //
-// Prefix header for all source files of the 'Activiez' target in the 'Activiez' project
+//  AppDelegate.h
+//  Activitiez
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+#import <Cordova/CDVViewController.h>
+#import <Cordova/CDVAppDelegate.h>
+
+@interface AppDelegate : CDVAppDelegate {}
+
+@end

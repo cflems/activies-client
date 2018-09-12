@@ -11,8 +11,8 @@
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-camera": {
-      "CAMERA_USAGE_DESCRIPTION": "Used to capture pictures attached to posts",
-      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Used to select pictures attached to posts",
+      "CAMERA_USAGE_DESCRIPTION": "A2",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "C2",
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-device": {
@@ -22,7 +22,7 @@
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-geolocation": {
-      "GEOLOCATION_USAGE_DESCRIPTION": "Used to filter posts near your location",
+      "GEOLOCATION_USAGE_DESCRIPTION": "D1",
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-globalization": {
@@ -32,9 +32,9 @@
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-media-capture": {
-      "CAMERA_USAGE_DESCRIPTION": "Used to capture pictures attached to posts",
-      "MICROPHONE_USAGE_DESCRIPTION": "Unused",
-      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Used to select pictures attached to posts",
+      "CAMERA_USAGE_DESCRIPTION": "A1",
+      "MICROPHONE_USAGE_DESCRIPTION": "B1",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "C1",
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-network-information": {
