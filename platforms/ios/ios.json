@@ -63,26 +63,34 @@
         "parents": {
           "NSCameraUsageDescription": [
             {
-              "xml": "<string>A</string>",
-              "count": 2
+              "xml": "<string>cam</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
             }
           ],
           "NSPhotoLibraryUsageDescription": [
             {
-              "xml": "<string>C</string>",
-              "count": 2
+              "xml": "<string>phot-lib</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
             }
           ],
           "NSLocationWhenInUseUsageDescription": [
             {
-              "xml": "<string>D</string>",
-              "count": 2
+              "xml": "<string>locat</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
             }
           ],
           "NSMicrophoneUsageDescription": [
             {
-              "xml": "<string>B</string>",
-              "count": 1
+              "xml": "<string>mic</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
             }
           ]
         }

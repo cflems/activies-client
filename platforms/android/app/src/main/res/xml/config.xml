@@ -50,6 +50,18 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSCameraUsageDescription">
+        <string>cam</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSPhotoLibraryUsageDescription">
+        <string>phot-lib</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSLocationWhenInUseUsageDescription">
+        <string>locat</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSMicrophoneUsageDescription">
+        <string>mic</string>
+    </edit-config>
     <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />

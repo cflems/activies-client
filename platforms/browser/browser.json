@@ -18,6 +18,42 @@
             }
           ]
         }
+      },
+      "*-Info.plist": {
+        "parents": {
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>cam</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
+            }
+          ],
+          "NSPhotoLibraryUsageDescription": [
+            {
+              "xml": "<string>phot-lib</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
+            }
+          ],
+          "NSLocationWhenInUseUsageDescription": [
+            {
+              "xml": "<string>locat</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
+            }
+          ],
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>mic</string>",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml"
+            }
+          ]
+        }
       }
     }
   },

@@ -68,6 +68,18 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSCameraUsageDescription">
+        <string>cam</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSPhotoLibraryUsageDescription">
+        <string>phot-lib</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSLocationWhenInUseUsageDescription">
+        <string>locat</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSMicrophoneUsageDescription">
+        <string>mic</string>
+    </edit-config>
     <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
     <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
     <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />

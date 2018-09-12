@@ -54,12 +54,12 @@
       <string>UIInterfaceOrientationPortrait</string>
     </array>
     <key>NSCameraUsageDescription</key>
-    <string>A</string>
+    <string>cam</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>C</string>
+    <string>phot-lib</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>D</string>
+    <string>locat</string>
     <key>NSMicrophoneUsageDescription</key>
-    <string>B</string>
+    <string>mic</string>
   </dict>
 </plist>
