@@ -15,18 +15,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSCameraUsageDescription">
-        <string>cam</string>
-    </edit-config>
-    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSPhotoLibraryUsageDescription">
-        <string>phot-lib</string>
-    </edit-config>
-    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSLocationWhenInUseUsageDescription">
-        <string>locat</string>
-    </edit-config>
-    <edit-config file="*-Info.plist" mode="overwrite" platform="ios" target="NSMicrophoneUsageDescription">
-        <string>mic</string>
-    </edit-config>
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="orientation" value="portrait" />

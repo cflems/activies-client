@@ -7,12 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
@@ -28,19 +22,15 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.peolplesactivities.activitiez"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
-    }
-  },
-  "dependent_plugins": {
+    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.peolplesactivities.activitiez"
     }
-  }
+  },
+  "dependent_plugins": {}
 }
